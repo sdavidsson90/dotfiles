@@ -7,7 +7,6 @@
 # -- How do I use them? 
 # Source this file in your .bashrc/.zshrc to start using them.
 #
-#
 # -- Additional info:
 # This will not work on servers, since they do not have a display server (which
 # is a requirement for copybuffers).

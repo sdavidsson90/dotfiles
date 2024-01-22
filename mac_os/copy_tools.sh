@@ -1,9 +1,16 @@
 # COPY TOOLS
-# Compatible with bash and zsh
-
-# Linux:
-# xsel -ob: paste
-# xsel -ib: copy
+# 
+#  -- What is this?
+# Shell funcitons that allow for copy/paste actions in the command line.
+# I have gone to great lenghts to ensure that they work with both zsh and bash.
+#
+# -- How do I use them? 
+# Source this file in your .bashrc/.zshrc to start using them.
+#
+#
+# -- Additional info:
+# This will not work on servers, since they do not have a display server (which
+# is a requirement for copybuffers).
 
 # ----------------
 # Copy working directory

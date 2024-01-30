@@ -43,8 +43,6 @@ alias tka="tmux kill-server"
 alias c="chatgpt --model gpt-3.5-turbo-1106"
 alias gpt4="chatgpt --model gpt-4"
 alias n="nvim"
-alias r="Rscript"
-alias py="python3"
 alias co='conda activate $( ls /usr/local/Caskroom/miniconda/base/envs | fzf --height=40% --no-border)'
 alias cl='conda list | fzf'
 alias cat="bat -p"

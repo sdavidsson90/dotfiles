@@ -1,18 +1,19 @@
+# --
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
-#
+# -- 
 shopt -s histappend
 HISTFILE="$HOME/.bash_history"
 HISTSIZE=999999999
 HISTFILESIZE=99999999
 HISTTIMEFORMAT="%d/%m/%y %T "
 
-
-#
+# --
 alias l="ls -lh --group-directories-first --color=auto"
 alias ll="ls -Alhv --group-directories-first --color=auto"
 alias lt="ls -lhvtr --color=auto"
 alias llt="ls -Alhvtr --color=auto"
+#
 alias hiss="history | less +G"
 alias erc="vim ~/.bashrc"
 alias nvim="vim"
@@ -23,9 +24,10 @@ alias tl="tmux ls"
 alias tn="tmux new -s"
 alias tk="tmux kill-session -t"
 alias tka="tmux kill-server"
+#
 alias sc="scancel -u `whoami`"
 
-# --
+# -- 
 
 # print newest file
 nf() {

@@ -1,5 +1,3 @@
-# Dotfiles
-
 ### What is this?
 These are excerpts from the dotfiles that make up my personal development environment. I don't plan on doing updates.
 

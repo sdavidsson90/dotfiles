@@ -1,5 +1,5 @@
 ### What is this?
-These are excerpts from the dotfiles that make up my personal development environment. I don't plan on doing updates.
+These are excerpts from the dotfiles that make up my personal development environment. It's a static dump, and I don't plan on doing updates.
 
 ### What can I find here?
 

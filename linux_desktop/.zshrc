@@ -1,6 +1,8 @@
+# -- CORE UTILS
+
 bindkey "^[[1;5C" forward-word	# ctrl + left:  go to next word
 bindkey "^[[1;5D" backward-word # ctrl + right: go to previous word
-#
+
 setopt EXTENDED_HISTORY
 setopt HIST_FIND_NO_DUPS
 setopt SHARE_HISTORY
@@ -11,7 +13,6 @@ export HISTSIZE=999999999
 export SAVEHIST=$HISTSIZE
 export HISTFILESIZE=$HISTSIZE
 
-# -- CORE UTILS
 source $HOME/Documents/github/sdavidsson90/dotfiles/linux_desktop/copy_tools.sh
 
 alias erc="nvim ~/.zshrc"
@@ -60,7 +61,7 @@ export SSH_AUTH_SOCK=/run/user/$UID/ssh-agent-$USER.sock
 if [ ! -S "$SSH_AUTH_SOCK" ]; then ssh-agent -a "$SSH_AUTH_SOCK" > /dev/null; fi
 
 # ____________________________________________________________________
-# Load additional software modules:
+# Additional software modules:
 source ~/.antidote/antidote.zsh && antidote load
 source ~/.p10k.zsh
 eval "$(zoxide init zsh)"

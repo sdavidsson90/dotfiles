@@ -1,4 +1,5 @@
-export LC_ALL="en_CA.UTF-8"
+# -- CORE UTILS
+export LC_ALL="en_CA.UTF-8"     # english, but sensible units
 bindkey "^[[1;5C" forward-word  # ctrl + left: go to next word
 bindkey "^[[1;5D" backward-word # ctrl + right: go to previous word
 
@@ -10,7 +11,6 @@ setopt EXTENDED_HISTORY     # Adds timestamp to history
 setopt INC_APPEND_HISTORY   # Append command to history immediately (instead of upon exit)
 setopt SHARE_HISTORY        # Share history between all sessions.
 
-# -- CORE UTILS
 source /Users/ssd-mbp/Filen_io/Mellemting/ssd-mbp/copy_tools.sh
 
 alias l="gls -lhF --color=auto --group-directories-first"

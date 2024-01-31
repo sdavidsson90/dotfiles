@@ -1,6 +1,12 @@
 # --
+# Default prompt:
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
+# Powerlevel10k style prompt
+# PS1='\[\033[1;34m\]\w\[\033[0m\] (bash) ❯ '
+
+# -- 
+export EDITOR="vim"
 # -- 
 shopt -s histappend
 HISTFILE="$HOME/.bash_history"
@@ -16,11 +22,10 @@ alias ltr="ls -lhFt --color=auto"
 alias llt="ls -Alhvtr --color=auto"
 alias lltr="ls -AlhFt --color=auto"
 alias lg="ls -AlhvF | grep --color=auto"
-alias t="exa -a --tree --icons -I .git"
 
 #
 alias hiss="history | less +G"
-alias erc="vim ~/.bashrc"
+alias erc="$EDITOR ~/.bashrc"
 alias nvim="vim"
 alias grep="grep --color"
 #
@@ -30,9 +35,6 @@ alias tn="tmux new -s"
 alias tnd="tmux new -s -d"
 alias tk="tmux kill-session -t"
 alias tka="tmux kill-server"
-#
-alias sc="scancel -u `whoami`"
-
 # -- 
 
 # print newest file

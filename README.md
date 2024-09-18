@@ -1,5 +1,5 @@
 ### What is this?
-This is an excerpt from my dotfiles. Do know that this is (continously) a work in progress. This is a static dump for sharing with people, and there won't be updates
+This is an excerpt from my dotfiles. Do know that this is (continously) a work in progress. This is a static dump for sharing with people and there won't be updates.
 
 ### How to use it?
 The logic of this setup consists of two components:
@@ -8,7 +8,7 @@ The logic of this setup consists of two components:
 
 [2] Cloud hosted components: All configurations that can be shared accross machines.
 
-Inside the machine specific component [1] the cloud hosted components are sourced with:
+Inside the machine specific component [1] the cloud hosted components [2] are sourced with:
 
 ```
     CONFIG_DIR="$HOME/Filen_io/ssd_env/config/"
@@ -21,11 +21,14 @@ Inside the machine specific component [1] the cloud hosted components are source
 This sources all files in $CONFIG_DIR that end in "*.sh" or "*.zsh" (for bash the latter would be "*.bash"). 
 "*.sh" is for both shells, and "*.bash" or "*.zsh" would be for the specific shell only.
 
-### Why bother? Why all the small files?
+### Why all the small files?
 Makes for easier sharing across environments.
 
 ### Coolest features
 cd_tools, copytools, easyconnect
+
+### Dependencies
+fzf, fdfind, rg, bat
 
 ### What can I find here?
 At 2024-09-18:
@@ -75,8 +78,6 @@ At 2024-09-18:
 │       └── wezterm.lua
 └── shells
     ├── application_inits
-    │   ├── atuin
-    │   │   └── how2install
     │   ├── bat.sh
     │   ├── chatgpt.sh
     │   ├── easy_connect
